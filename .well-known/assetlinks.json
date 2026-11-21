@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.zaid.walkie",
+      "sha256_cert_fingerprints": [
+        "9B:00:B0:62:68:EE:DD:82:E4:18:5E:07:20:D0:20:27:60:D9:6C:5A:C0:FA:AC:AA:FB:D2:F6:EE:70:43:1B:DE"
+      ]
+    }
+  }
+]

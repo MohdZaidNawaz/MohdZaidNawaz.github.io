@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Walkie invite</title>
+<style>
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0E0F13;color:#F4F4F6;font-family:system-ui,sans-serif;text-align:center}
+main{max-width:340px;padding:24px}h1{margin:0 0 8px}p{color:#8B8F9C}
+a.b{display:block;margin:12px 0;padding:14px;border-radius:14px;text-decoration:none;font-weight:700}
+.p{background:#FFD23F;color:#141414}.s{background:#1A1C23;color:#F4F4F6}
+code{background:#1A1C23;padding:4px 8px;border-radius:8px;word-break:break-all}
+</style></head><body><main>
+<h1>Walkie</h1>
+<p>You were invited to talk on Walkie.</p>
+<a class="b p" id="open" href="#">Open in Walkie</a>
+<a class="b s" id="install" href="https://expo.dev/accounts/madex010/projects/walkie/builds/51ab2bba-5f74-4344-840c-53b7ceb66049">Install Walkie (Android)</a>
+<p>Or paste this code in the app (Friends, "Have an invite code"):<br><code id="code"></code></p>
+</main>
+<script>
+var m = location.pathname.match(/([0-9a-f]{24})/i);
+var code = m ? m[1].toLowerCase() : "";
+document.getElementById("code").textContent = code || "(no code in this link)";
+document.getElementById("open").href = code ? "walkie://invite/" + code : "walkie://";
+</script></body></html>
